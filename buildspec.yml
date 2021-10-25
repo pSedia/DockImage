@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+    
+  pre_build:
+    commands:
+      - docker build -t helloworld_build .
+  build:
+    commands:
+      - docker images
+      - docker run helloworld echo "Hello!!! GIooo"
+
+  post_build:
+    commands:
+      - echo "tutto apposto"
+      
