@@ -8,7 +8,7 @@ phases:
   build:
     commands:
       - docker images
-      - docker run helloworld echo "Hello!!! GIooo"
+      - docker run helloworld_build echo "Hello!!! GIooo"
 
   post_build:
     commands:
