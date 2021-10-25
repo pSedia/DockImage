@@ -9,6 +9,7 @@ phases:
     commands:
       - docker images
       - docker run helloworld_build echo "Hello!!! GIooo"
+      - docker save -o helloworld_build.tar helloworld_build
 
   post_build:
     commands:
