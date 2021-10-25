@@ -14,3 +14,7 @@ phases:
     commands:
       - echo "tutto apposto"
       
+  artifacts:
+    files:
+      - '**/*'
+    
