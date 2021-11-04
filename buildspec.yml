@@ -7,10 +7,10 @@ phases:
       
   pre_build:
     commands:
+      - docker build -t dockertest 
       
   build:
     commands:
-      - docker build -t dockertest .
       - docker run dockertest
       - docker save -o dockertest.tar dockertest
 
