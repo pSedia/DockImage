@@ -10,7 +10,7 @@ phases:
       
   build:
     commands:
-      - docker build -t dockertest
+      - docker build -t dockertest .
       - docker run dockertest
       - docker save -o dockertest.tar dockertest
 
