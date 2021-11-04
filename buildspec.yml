@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      android: 29
+      
+  pre_build:
+    commands:
+      
+  build:
+    commands:
+      - docker run dockertest
+
+  post_build:
+    commands:
+      - echo "Sono in Post Build"
+      
+      
+artifacts:
+  files:
+    - '**/*.tar'
+      
