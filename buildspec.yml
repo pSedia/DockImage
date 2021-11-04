@@ -10,12 +10,13 @@ phases:
       
   build:
     commands:
+      - docker build -t dockertest
       - docker run dockertest
+      - docker save -o dockertest.tar dockertest
 
   post_build:
     commands:
       - echo "Sono in Post Build"
-      
       
 artifacts:
   files:
